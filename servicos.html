@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhor PetShop</title>
+    <link rel="stylesheet" href="servicos.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>
+                    Miauzinho
+                    Pet
+                    <i class="fa fa-paw"></i>
+                    Shop
+                </span>
+            </div>
+            <div>
+                <ul class="options">
+                    <li>
+                        <a href="index.html">Página Inicial</a>
+                    </li>
+
+                    <li>
+                        <a href="sobrenos.html">Sobre nós</a>
+                    </li>
+
+                    <li>
+                        <a href="produtos.html">Produtos</a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+
+                    <li>
+                        <input type="search" placeholder="Search" aria-label="Search">
+                        <button type="submit">Procure</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="user">
+                <span>Logar</span>
+                <p>|</p>
+                <span><a href="cadastro.html">Cadastrar</a></span>
+            </div>
+            <div class="hamburguer" onclick="menuMobile()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="item">
+                <img src="fotosservicos/pngwing.com.png" alt="Imagem 1">
+                <div class="descricao">
+                    <h2>Banho</h2>
+                    <p>Um bom banho para higiene do seu Pet</p>
+                    <p class="valor">R$ 50,00</p>
+                    <form action="cadastro.php" method="get" autocomplete="on">
+                        <fieldset>
+                            <legend>Deseja que busquemos seu Pet</legend>
+                            <input type="radio" name="test" id="isxmas" value="T"> <label for="isxmas">Sim</label><br>
+                            <input type="radio" name="test" id="isxfem" value="F"> <label for="isxfem">Não</label>
+                            <p>
+                                <label for="idia">Data de Agendamento</label>
+                                <input type="date" name="dia" id="idia" value="2022-07-2014">
+                            </p>
+                            <p>
+                                <label for="ihora">Horário</label>
+                                <input type="time" name="hora" id="ihora">
+                            </p>
+                        </fieldset>   
+                    </form>
+                    <button class="botao-compra">Comprar Agora</button>
+                </div>
+            </section>
+            <section class="item">
+                <img src="fotosservicos/pngwing.com (1).png" alt="Imagem 2">
+                <div class="descricao">
+                    <h2>Banho e Tosa</h2>
+                    <p>Um banho e Tosa para seu Pet</p>
+                    <p class="valor">R$ 75,00</p>
+                    <form action="cadastro.php" method="get" autocomplete="on">
+                        <fieldset>
+                            <legend>Deseja que busquemos seu Pet</legend>
+                            <input type="radio" name="test" id="isxmas" value="T"> <label for="isxmas">Sim</label><br>
+                            <input type="radio" name="test" id="isxfem" value="F"> <label for="isxfem">Não</label>
+                            <p>
+                                <label for="idia">Data de Agendamento</label>
+                                <input type="date" name="dia" id="idia" value="2022-07-2014">
+                            </p>
+                            <p>
+                                <label for="ihora">Horário</label>
+                                <input type="time" name="hora" id="ihora">
+                            </p>
+                        </fieldset>   
+                    </form>
+                    <button class="botao-compra">Comprar Agora</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+ 
+    <footer>
+            <div class="footer">
+            <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            
+            <div class="row">
+            <ul>
+            <li><a href="#">Contato: 55 19 55484-9585</a></li>
+            <li><a href="#">Email: miauzinho@grandpet.com</a></li>
+            <li><a href="#">Politica de Privacidade</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+            </ul>
+            </div>
+            
+            <div class="row">
+            Copyright © 2023 - Todos direitos reservados || Criado por: Pedro Ivo da Silva
+            </div>
+            </div>
+    </footer>
+            
+    <script>
+        let options = document.querySelector(".options");
+
+        function menuMobile() {
+            options.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

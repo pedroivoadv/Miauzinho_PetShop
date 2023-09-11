@@ -1,0 +1,157 @@
+
+.container{
+    background: linear-gradient(180deg, #5E5363 0%,#9C9297 50%,#F0AE3C 51%, #EFAE3A 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.wrapper{
+    position: relative;
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vizualizarprods, .vizualizarprodm {
+    display: flex;
+    align-items: center;
+}
+
+.imagem {
+    flex: 1;
+}
+
+.info-produto {
+    flex: 2;
+    text-align: center;
+}
+
+.imgprodutos, .imgprodutos2 {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-produto {
+    text-align: justify;
+}
+
+.botao-compra {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.botao-compra:hover {
+    background-color: #0056b3; 
+}
+
+
+.racaosecao {
+    margin-bottom: 40px;
+}
+
+.imgprodutos{
+    height: 200px;
+    width: 200px;
+    margin-left: -30px;
+}
+
+.imgprodutos2 {
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width: 1200px) {
+    .wrapper{
+        width: 70%;
+    }
+
+    .container .paw{
+        display: none;
+    }
+}
+
+@media (max-width: 998px) {
+    .wrapper{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .bottom{
+        width: 90%
+    }
+    .container {
+        padding: 20px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    
+    .racaosecao .vizualizarprods,
+    .racaomolhada .vizualizarprodm {
+        flex-direction: row; 
+    }
+
+    
+    .racaosecao .vizualizarprods .imagem,
+    .racaomolhada .vizualizarprodm .imagem {
+        order: 1;
+    }
+
+    .racaosecao .vizualizarprods .info-produto,
+    .racaomolhada .vizualizarprodm .info-produto {
+        order: 2;
+    }
+}
+
+@media (max-width: 441px) {
+    .top span {
+        display: none;
+    }
+    .singUp  {
+       flex-direction: column-reverse;
+       gap: 3px;
+       align-items: center;
+       top: 10px;
+    }
+    .singUp span{
+        align-self: flex-start;
+    }
+    .singUp button{
+        align-self: flex-end;
+    }
+}
+
+
+@keyframes items{
+    0%{
+       transform: translateX(300%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}

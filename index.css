@@ -1,0 +1,108 @@
+
+.container{
+    background: linear-gradient(180deg, #5E5363 0%,#9C9297 50%,#F0AE3C 51%, #EFAE3A 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textinformation {
+    width: 400px;
+    text-align: justify;
+}
+
+.textinformation h1 {
+    margin-bottom: 20px;
+}
+
+.textinformation p {
+    margin-top: 10px;
+    line-height: 1.3;
+}
+
+@media (max-width: 1200px) {
+    .wrapper{
+        width: 70%;
+    }
+
+    .container .paw{
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    @media (max-width: 850px) {
+        .wrapper {
+            width: 80%;
+        }
+
+        .container{
+            background: linear-gradient(180deg, #5E5363 0%,#9C9297 50%,#F0AE3C 51%, #EFAE3A 100%);
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .textinformation {
+            width: 80%;
+            text-align: justify;
+            margin-top: 50px;
+        }
+
+    .fotoinformation img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 669px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .bottom{
+        width: 90%
+    }
+
+}
+@media (max-width: 441px) {
+    .top span {
+        display: none;
+    }
+    .singUp  {
+       flex-direction: column-reverse;
+       gap: 3px;
+       align-items: center;
+       top: 10px;
+    }
+    .singUp span{
+        align-self: flex-start;
+    }
+    .singUp button{
+        align-self: flex-end;
+    }
+
+    .textinformation {
+        width: 250px;
+        text-align: justify;
+    }
+
+}
+
+}
+
+
+@keyframes items{
+    0%{
+       transform: translateX(300%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhor PetShop</title>
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>
+                    Miauzinho
+                    Pet
+                    <i class="fa fa-paw"></i>
+                    Shop
+                </span>
+            </div>
+            <div>
+                <ul class="options">
+                    <li>
+                        <a href="index.html">Página Inicial</a>
+                    </li>
+
+                    <li>
+                        <a href="sobrenos.html">Sobre nós</a>
+                    </li>
+
+                    <li>
+                        <a href="produtos.html">Produtos</a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+
+                    <li>
+                        <input type="search" placeholder="Search" aria-label="Search">
+                        <button type="submit">Procure</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="user">
+                <span>Logar</span>
+                <p>|</p>
+                <span><a href="cadastro.html">Cadastrar</a></span>
+            </div>
+            <div class="hamburguer" onclick="menuMobile()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <article class="racaosecao">
+                <div class="vizualizarprods">
+                    <div class="imagem">
+                        <img class="imgprodutos" src="fotosprodutos/pngwing.com.png" alt="foto ração seca cachorro">
+                    </div>
+                    <div class="info-produto">
+                        <p class="preco">Preço R$ 25,00</p>
+                        <p class="descricao">Descrição: Esta é a descrição da ração seca para gatos.</p>
+                        
+                    </div>
+                </div>
+                <button class="botao-compra">Comprar Agora</button>
+            </article>
+            
+            <article class="racaomolhada">
+                <div class="vizualizarprodm">
+                    <div class="imagem">
+                        <p class="preco">Preço R$ 35,00</p>
+                        <p class="descricao">Descrição: Esta é a descrição da ração molhada para gatos.</p>
+                    </div>
+                    <div class="info-produto">
+                        <img class="imgprodutos2" src="fotosprodutos/sache-proplan-nestle.png" alt="ração molhada gatos">
+                    </div>
+                </div>
+                <button class="botao-compra">Comprar Agora</button>
+            </article>            
+        </section>
+    </main>
+
+    <footer>
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+
+                <div class="row">
+                    <ul>
+                        <li><a href="#">Contato: 55 19 55484-9585</a></li>
+                        <li><a href="#">Email: miauzinho@grandpet.com</a></li>
+                        <li><a href="#">Politica de Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    Copyright © 2023 - Todos direitos reservados || Criado por: Pedro Ivo da Silva
+                </div>
+            </div>
+        </footer>
+
+    </footer>
+    <script>
+        let options = document.querySelector(".options");
+
+        function menuMobile() {
+            options.classList.toggle("active");
+        }
+
+    </script>
+
+</body>
+
+</html>

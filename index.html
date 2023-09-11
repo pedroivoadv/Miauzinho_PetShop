@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhor PetShop</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>
+                    Miauzinho
+                    Pet
+                    <i class="fa fa-paw"></i>
+                    Shop
+                </span>
+            </div>
+            <div>
+                <ul class="options">
+                    <li>
+                        <a href="index.html">Página Inicial</a>
+                    </li>
+
+                    <li>
+                        <a href="sobrenos.html">Sobre nós</a>
+                    </li>
+
+                    <li>
+                        <a href="produtos.html">Produtos</a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+
+                    <li>
+                        <input type="search" placeholder="Search" aria-label="Search">
+                        <button type="submit">Procure</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="user">
+                <span>Logar</span>
+                <p>|</p>
+                <span><a href="cadastro.html">Cadastrar</a></span>
+            </div>
+            <div class="hamburguer" onclick="menuMobile()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <aside class="fotoinformation">
+                <img src="fotosindex/pngwing.com.png" alt="gatinho aguardando banho">
+            </aside>
+            <article class="textinformation">
+                <h1 class="Titulo"> Bem-Vindo ao Miauzinho - O Seu Destino para Amor e Cuidados aos Pets!</h1>
+                <p>
+                    No Miauzinho, nossa paixão é cuidar dos membros peludos da sua família. Se você está procurando o
+                    melhor para o seu amigo de quatro patas, você veio ao lugar certo!
+                </p>
+                <p>
+                    Somos mais do que apenas um pet shop; somos uma comunidade de amantes de animais que compartilham a
+                    mesma missão: proporcionar aos nossos pets uma vida feliz e saudável. Aqui, você encontrará tudo o
+                    que precisa para garantir o bem-estar do seu peludo de estimação.
+                </p>
+                <p>
+                    Junte-se a nós nesta jornada de proporcionar uma vida melhor para os nossos amigos peludos. Explore
+                    nosso site para descobrir as últimas novidades, promoções emocionantes e dicas úteis para cuidar do
+                    seu pet.
+                </p>
+                <p>
+                    Lembre-se, seu pet é mais do que um animal de estimação; ele é parte da sua família. E no Miauzinho,
+                    nós entendemos isso como ninguém.
+                </p>
+                <p>
+                    Se você ama seu pet, você vai adorar o Miauzinho. Venha nos visitar online e comece a proporcionar
+                    ao seu peludo uma vida repleta de amor e felicidade.
+                </p>
+                <p>
+                    Com amor pelos pets,
+                </p>
+                <p>
+                    A equipe do Miauzinho.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <footer>
+            <div class="footer">
+            <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            
+            <div class="row">
+            <ul>
+            <li><a href="#">Contato: 55 19 55484-9585</a></li>
+            <li><a href="#">Email: miauzinho@grandpet.com</a></li>
+            <li><a href="#">Politica de Privacidade</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+            </ul>
+            </div>
+            
+            <div class="row">
+            Copyright © 2023 - Todos direitos reservados || Criado por: Pedro Ivo da Silva
+            </div>
+            </div>
+            </footer>
+            
+    </footer>
+
+    <script>
+        let options = document.querySelector(".options");
+
+        function menuMobile() {
+            options.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

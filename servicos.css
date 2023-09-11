@@ -1,0 +1,110 @@
+
+.container{
+    background: linear-gradient(180deg, #5E5363 0%,#9C9297 50%,#F0AE3C 51%, #EFAE3A 100%);
+    width: 98%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+.item {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+}
+
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.descricao {
+    margin-top: 10px;
+}
+
+
+.valor {
+    font-weight: bold;
+    color: #009900;
+}
+
+.botao-compra {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.botao-compra:hover {
+    background-color: #0056b3; 
+}
+
+
+
+@media (max-width: 1200px) {
+    .wrapper{
+        width: 70%;
+    }
+
+    .container .paw{
+        display: none;
+    }
+}
+
+@media (max-width: 998px) {
+    .wrapper{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 669px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .bottom{
+        width: 90%
+    }
+
+}
+@media (max-width: 441px) {
+    .top span {
+        display: none;
+    }
+    .singUp  {
+       flex-direction: column-reverse;
+       gap: 3px;
+       align-items: center;
+       top: 10px;
+    }
+    .singUp span{
+        align-self: flex-start;
+    }
+    .singUp button{
+        align-self: flex-end;
+    }
+}
+
+
+@keyframes items{
+    0%{
+       transform: translateX(300%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
